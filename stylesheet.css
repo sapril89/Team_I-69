@@ -12,7 +12,7 @@ body {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -27,20 +27,56 @@ header {
   float: left;
 }
 
-.header-right {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
 
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-right li {
+.header-right a {
   float: right;
   line-height: 65px;
   padding: 0 25px;
   color: white;
-  display: block;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.Contact, .Profil, .Beranda {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  margin: 75px;
+}
+
+footer img {  
+  width: 100px;  
+}
+
+footer p {    
+  color: #b3aeb5;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 100px;
+  padding-top: 30px;
+}
+
+span {
+  font-size: 14px;
+  font-weight: bold;
+  border-color: black;  
 }

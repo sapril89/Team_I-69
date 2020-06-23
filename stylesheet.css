@@ -4,15 +4,16 @@ h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
+/* ============= by Sapril ============= */
 
 body {
-  font-family: "Lucida Grande";
+  font-family: "Century Gothic";
 }
 
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -27,42 +28,138 @@ header {
   float: left;
 }
 
+.header-right {
+  float: right;
+  transition: all 0.5s;
+ }
+/* edit by Roby, koreksi dikit, per mouse hover sesuai dgn list nya */
 
-.header-right a {
+.header-right li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right li {
   float: right;
   line-height: 65px;
   padding: 0 25px;
   color: white;
-  display: inline-block;
-  font-size: 18px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left:5px;
 }
 
-.Contact, .Profil, .Beranda {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-}
-
-.btn:hover {
-  opacity: 1;
-}
+/* ============= by Roby ============= */
 
 .container {
   width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
+ 
 }
+
 
 .top-wrapper {
-  margin: 75px;
+  padding: 180px 0 100px 0;
+  background-image: url(header-bg.jpg);
+  background-size: cover;
+  opacity:0.8;
+  color: white;
+  text-align: center;
 }
 
+.top-wrapper h1 {
+	border:solid white;
+	background-color: black;
+	opacity:0.8;
+  font-size: 125px;
+  letter-spacing: 5px;
+  padding: 0px 25px 0px 25px;
+}
+.container span {
+	color:red;
+}
+
+.top-wrapper p {
+  font-size:45px;
+  margin-bottom:25px;
+}
+
+
+.lesson-wrapper {
+  height: 500px;
+
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  font-size:45px;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+  height:100px;
+  color:#b3aeb5;
+}
+
+.lesson:hover {
+ transform:scale(1.5);
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: #b3aeb5;
+  font-size:25px;
+  
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  font-size: 15px;
+  color: #b3aeb5;
+   margin-top:30px;
+}
+
+.tugas-wrapper{
+text-align:center;
+height:500px;
+}
+
+.tugas {
+	float: left;
+	width: 50%;	
+}
+.tugas h3{
+	text-align:left;
+	font-size:30px;
+	padding:10px 10px 10px 10px;
+}
+.tugas p{
+	text-align:left;
+	font-size:20px;
+	padding:10px 10px 10px 10px;
+}
+/* =====START BY SAPRIL ====> */
+
 footer img {  
-  width: 100px;  
+  width: auto;  
+  height:100px
 }
 
 footer p {    
@@ -73,10 +170,11 @@ footer p {
 footer {
   margin-top: 100px;
   padding-top: 30px;
+  	border:line 1px red;
+	background-color: #f7f7f7;
 }
 
-span {
-  font-size: 14px;
-  font-weight: bold;
-  border-color: black;  
+footer span{
+	color:black;
 }
+

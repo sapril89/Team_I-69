@@ -35,6 +35,7 @@
   
   .top-wrapper {
     text-align: left;
+    background-size: cover;
   }
   
   .top-wrapper h1 {
